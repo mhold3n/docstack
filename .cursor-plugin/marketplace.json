@@ -1,0 +1,17 @@
+{
+  "name": "docstack",
+  "owner": {
+    "name": "Max Holden"
+  },
+  "metadata": {
+    "description": "docstack \u2014 docs/PDF twin of pstack",
+    "version": "0.1.4"
+  },
+  "plugins": [
+    {
+      "name": "docstack",
+      "source": ".",
+      "description": "Playbook-driven agent workflows for markdown, documentation sites, and PDFs"
+    }
+  ]
+}

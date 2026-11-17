@@ -1,0 +1,34 @@
+{
+	"name": "docstack",
+	"displayName": "docstack",
+	"version": "0.1.5",
+	"description": "if you want to go fast, go deep first. docstack helps you write less, but higher quality docs and PDFs. rigorous agent workflows you can parallelize with confidence.",
+	"author": {
+		"name": "Max Holden"
+	},
+	"license": "MIT",
+	"logo": "assets/logo.png",
+	"keywords": [
+		"docstack",
+		"docs-mode",
+		"documentation",
+		"markdown",
+		"pdf",
+		"workflow",
+		"principles",
+		"unslop",
+		"technical-writing"
+	],
+	"category": "developer-tools",
+	"tags": [
+		"docs",
+		"pdf",
+		"markdown",
+		"workflow",
+		"review"
+	],
+	"skills": "./skills/",
+	"agents": "./agents/",
+	"homepage": "https://github.com/mhold3n/docstack",
+	"repository": "https://github.com/mhold3n/docstack"
+}
