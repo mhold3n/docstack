@@ -9,7 +9,7 @@ disable-model-invocation: true
 Write so a tired engineer understands on the first read.
 
 - Cut every word that does no work.
-- Use the short, everyday word: "use", not "utilize".
+- Use the short, everyday word: "use", not "use".
 - When a rule makes a sentence worse, fix the sentence another way or leave it alone.
 - Write the real symbol, file, flag, or command name, not a synonym or a description of it.
 - Don't invent jargon. Use the words a developer would say out loud. Say what a named pattern means the first time.
@@ -25,16 +25,16 @@ Write so a tired engineer understands on the first read.
 One document, one mode. Don't mix modes. Split and link instead.
 
 - **Tutorial: learning by doing.** Say what the learner will build. Every step produces a visible result, and you say what they should see. Explanation gets one clause and a link.
-- **How-to: steps to a goal.** Solve the reader's problem. Assume competence. Action only. Allow forks. Name the guide by the task.
-- **Reference: facts for lookup.** Only describe. Be dry, complete, and sure. Mirror the structure of the thing described.
-- **Explanation: understanding and why.** One bounded topic. Give context: design decisions, history, constraints, alternatives. Opinion is allowed here and nowhere else.
+- **How-to: steps to a goal.** Solve the reader's problem. Assume competence. Keep the page to actions. Allow forks. Name the guide by the task.
+- **Reference: facts for lookup.** Describe. Stay dry, complete, and sure. Mirror the structure of the thing described.
+- **Explanation: understanding and why.** One bounded topic. Give context: design decisions, history, constraints, alternatives. Opinion belongs here and nowhere else.
 
 ## Write sentences to the reader (Google developer style)
 
 - Talk to the reader as "you", in the present tense.
-- Say who does what. Passive is fine only when the actor is unknown or beside the point.
+- Say who does what. Use passive when the actor is unknown or beside the point.
 - Write instructions as commands. Put the condition before the instruction and the common case first.
-- No buzzwords, no figurative language, no "please", and never "simply", "easy", or "quickly" in a procedure.
+- Ban buzzwords and figurative language. Drop `please`. In a procedure, never write `simply`, `easy`, or `quickly`.
 - Don't pre-announce, and don't start consecutive sentences with the same phrase.
 - Link with words that say where the link goes.
 - Headings carry the point, in sentence case. One h1 per page, no skipped levels.
@@ -53,7 +53,7 @@ One document, one mode. Don't mix modes. Split and link instead.
 
 ## Leave no sentence open to two readings (Global English)
 
-- Keep words like "only" and "not" next to the word they change.
+- Keep limiters such as `only` and `not` next to the word they change.
 - Break up long noun strings.
 - Make every "it", "they", and "this" point at one obvious thing. Never use "this" or "which" to point at a whole clause.
 - Don't drop verbs, or the small words that show structure, such as "that".
@@ -64,6 +64,7 @@ One document, one mode. Don't mix modes. Split and link instead.
 
 ## Voice and repo specifics
 
+- Run **voice-write** before drafting and again before finishing. That skill owns the `plugin-docstack-voice` gate. Fail closed if the profile is empty or the namespace is missing.
 - Apply the **unslop** skill to every doc this skill touches. That skill owns the slop-pattern catalog: AI vocabulary, filler, hedging, formatting tells.
 - PR descriptions and commit messages are writing too. Every layer except Diátaxis applies to them. A PR body is a briefing that a reviewer can read in under a minute. Do not paste swarm logs, SHA lists, or metric tables. Link them.
 - Product UI strings are not documentation. Use your product's copy guidelines for those.

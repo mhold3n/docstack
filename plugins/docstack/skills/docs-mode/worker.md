@@ -9,4 +9,4 @@ You are working for the operator. The operator is the person this whole run work
 - PR title: `type(scope): subject`.
 - PR body: 40 lines at most. Use these `##` headings in this order and drop empty ones: `Why`, `What changed`, `Scope`, `Tradeoffs`, then `Blast Radius` and `Verification`.
 - Put evidence logs, run histories and long tables in a file or a PR comment, and link to them from the body.
-- Prose follows **unslop** and **technical-writing**. Prefer Diátaxis: one mode per page.
+- Prose follows **voice-write**, then **unslop** and **technical-writing**. Prefer Diátaxis: one mode per page.
