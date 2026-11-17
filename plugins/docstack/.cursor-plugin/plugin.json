@@ -1,7 +1,7 @@
 {
 	"name": "docstack",
 	"displayName": "docstack",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "if you want to go fast, go deep first. docstack helps you write less, but higher quality docs and PDFs. rigorous agent workflows you can parallelize with confidence.",
 	"author": {
 		"name": "Max Holden"

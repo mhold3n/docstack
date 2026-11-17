@@ -1,16 +1,17 @@
 {
-  "name": "docstack",
+  "name": "docstack-marketplace",
   "owner": {
-    "name": "Max Holden"
+    "name": "Max Holden",
+    "email": "146313184+mhold3n@users.noreply.github.com"
   },
   "metadata": {
-    "description": "docstack \u2014 docs/PDF twin of pstack",
-    "version": "0.1.4"
+    "description": "docstack marketplace \u2014 docs/PDF twin of pstack",
+    "version": "0.1.6"
   },
   "plugins": [
     {
       "name": "docstack",
-      "source": ".",
+      "source": "./plugins/docstack",
       "description": "Playbook-driven agent workflows for markdown, documentation sites, and PDFs"
     }
   ]
