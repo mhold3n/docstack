@@ -20,7 +20,7 @@ The remaining triggers live here:
 - Starting any agent, whether a Task subagent or a Project worker → the first line of its kickoff is `Read <path>/worker.md before anything else.`, with `<path>` the absolute path of this skill's folder. The operator's rules live in skills that load from a slash command, so they reach another agent no other way. Keep the rest of the kickoff to the goal and the task, plus this file's absolute path for a `docs-agent`.
 - A fork you could settle by drafting something → prototype it per `playbooks/prototype.md` instead of asking.
 - Docs that cross a page or section boundary → **architect** (information architecture first). Fan-out → **swarm**. Bakeoff → **arena**. Contested claims or structure → **interrogate**.
-- Prose, your reply included → **unslop**. Docs, RFCs, READMEs, PR descriptions, commit messages → **technical-writing**.
+- Prose, your reply included → **voice-write**, then **unslop**. Docs, RFCs, READMEs, PR descriptions, commit messages → **voice-write**, then **technical-writing**.
 - PDF create or visual review → **pdf**.
 - Before declaring done → prove it on the real artifact: rendered markdown or site, link check, style lint when present, PDF page PNGs via Poppler. "It looks fine in the editor" is not a pass.
 - Long or unattended work → **show-me-your-work**.

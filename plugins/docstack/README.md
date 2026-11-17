@@ -20,7 +20,7 @@ To get the book on `/`, import this repo as a team marketplace (or install after
 /docs-mode <goal> — done when <checkable predicate>
 ```
 
-`/docs-mode` matches a playbook and copies its steps into todos. It routes skills as steps need them. Core routes include `architect`, `arena`, `swarm`, and `interrogate`. Prose and PDF routes include `unslop`, `technical-writing`, and `pdf`. Large or unattended work with no fit falls through to `/figure-it-out`.
+`/docs-mode` matches a playbook and copies its steps into todos. It routes skills as steps need them. Core routes include `architect`, `arena`, `swarm`, and `interrogate`. Prose and PDF routes include `voice-write`, `unslop`, `technical-writing`, and `pdf`. Large or unattended work with no fit falls through to `/figure-it-out`.
 
 ## Setup
 
@@ -41,6 +41,8 @@ Dynamic voice review ships in this plugin (`voice/` + root `mcp.json`).
 | Corpus / cache / config | `~/.cursor/voice` (`CURSOR_VOICE_ROOT`) |
 
 After install, run `/setup-voice` (or `scripts/run-voice-mcp.sh` once) so the plugin venv exists. Remove any user-level `voice` entry from `~/.cursor/mcp.json` to avoid a duplicate `user-voice` server. Marker convert stays on the user `marker` MCP for now.
+
+Authored prose under docs-mode, technical-writing, and unslop must call `/voice-write`, which gates on `plugin-docstack-voice` (`get_voice_profile` before draft, `review_file` / `review_text` before done). Fail closed if that namespace is missing.
 
 ## Help
 

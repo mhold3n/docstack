@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Unslop
 
-Edit text to remove AI patterns. Scan for the patterns below, then rewrite. Preserve meaning and match the intended tone.
+Edit text to remove AI patterns. Before the rewrite pass, run **voice-write** (profile before edit, review after). Scan for the patterns below, then rewrite. Preserve meaning and match the intended tone.
 
 Rule numbers are stable ids that other skills cite. A removed rule leaves a gap.
 
@@ -27,7 +27,7 @@ Rule numbers are stable ids that other skills cite. A removed rule leaves a gap.
 19. Straight quotes.
 20. No chatbot phrases ("I hope this helps!", "Let me know if...").
 22. No praise or agreement openers. Respond directly.
-23. Cut filler. "In order to" becomes "to". Delete "it is important to note that".
+23. Cut filler. "to" becomes "to". Delete "it is important to note that".
 24. One hedge at most: "may".
 25. No generic conclusions. State specific plans or facts.
 26. No abstract metaphor nouns: substrate, wedge, vector, nexus, primitive, harness, surface, scaffolding, paradigm, ratchet, north star, flywheel. Use the concrete word.
@@ -35,6 +35,6 @@ Rule numbers are stable ids that other skills cite. A removed rule leaves a gap.
 28. One idea per sentence. Split a sentence the reader has to reread.
 29. Active voice. Name the actor unless it is unknown or doesn't matter.
 30. Cut adverbs or use a stronger verb. Give the number.
-31. Use the plain word: "use", not "utilize" or "leverage".
+31. Use the plain word: "use", not "use" or "leverage".
 32. No metaphor, aphorism, personified code, or figurative verb where a literal phrase exists.
 33. Write whole sentences with their articles and verbs. Spell out arrows and abbreviations.

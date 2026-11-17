@@ -9,7 +9,7 @@ disable-model-invocation: true
 Write so a tired engineer understands on the first read.
 
 - Cut every word that does no work.
-- Use the short, everyday word: "use", not "utilize".
+- Use the short, everyday word: "use", not "use".
 - When a rule makes a sentence worse, fix the sentence another way or leave it alone.
 - Write the real symbol, file, flag, or command name, not a synonym or a description of it.
 - Don't invent jargon. Use the words a developer would say out loud. Say what a named pattern means the first time.
@@ -64,6 +64,7 @@ One document, one mode. Don't mix modes. Split and link instead.
 
 ## Voice and repo specifics
 
+- Run **voice-write** before drafting and again before finishing. That skill owns the `plugin-docstack-voice` gate. Fail closed if the profile is empty or the namespace is missing.
 - Apply the **unslop** skill to every doc this skill touches. That skill owns the slop-pattern catalog: AI vocabulary, filler, hedging, formatting tells.
 - PR descriptions and commit messages are writing too. Every layer except Diátaxis applies to them. A PR body is a briefing that a reviewer can read in under a minute. Do not paste swarm logs, SHA lists, or metric tables. Link them.
 - Product UI strings are not documentation. Use your product's copy guidelines for those.

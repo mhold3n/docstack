@@ -75,7 +75,7 @@ The default answer is `/docs-mode`, which runs most of the others when its steps
 | Adversarial fact-check or break the claims | [`/interrogate`](../interrogate/SKILL.md) |
 | Work with no matching playbook | [`/figure-it-out`](../figure-it-out/SKILL.md) |
 | Create or visually review a PDF | [`/pdf`](../pdf/SKILL.md) |
-| Apply house prose style | [`/technical-writing`](../technical-writing/SKILL.md), [`/unslop`](../unslop/SKILL.md) |
+| Gate prose through voice MCP, then house style | [`/voice-write`](../voice-write/SKILL.md), then [`/technical-writing`](../technical-writing/SKILL.md) / [`/unslop`](../unslop/SKILL.md) |
 | Generate a project docs verifier | [`/create-docs-verify-skill`](../create-docs-verify-skill/SKILL.md) |
 | Audit that verifier later | [`/maintain-docs-verify-skill`](../maintain-docs-verify-skill/SKILL.md) |
 | Capture their own working style | [`/automate-me`](../automate-me/SKILL.md) |

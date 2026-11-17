@@ -32,3 +32,5 @@ ln -sfn "$PLUGIN_VOICE" "$HOME/.cursor/voice/runtime"
 4. Remove the user `voice` block from `~/.cursor/mcp.json` so tools come from `plugin-docstack-voice` alone. Keep the `marker` user MCP entry until Marker ships in the plugin.
 
 5. Open a new Agent chat. Confirm `plugin-docstack-voice` tools and `stylectl hook sessionStart` conditioning.
+
+6. Writing work uses [`/voice-write`](../voice-write/SKILL.md) (profile before draft, review before done). Docs-mode, technical-writing, and unslop route through that skill.
