@@ -20,11 +20,11 @@ Do not call `ensure_voice_corpus` unless the profile is empty and the user asked
 
 ## After you have an artifact
 
-- File path known → call `review_file` on that path.
-- Chat reply, PR body, or commit message only → call `review_text` on the final text.
+- When you have a file path, call `review_file` on that path so the corpus can score the saved prose.
+- When the artifact is a chat reply, a PR body, or a commit message with no path, call `review_text` on the final text.
 
 If the review returns block-severity findings, fix them and review again, or stop and report. Soft-skip is not allowed.
 
 ## Scope
 
-Use this gate for authored prose under docs-mode, technical-writing, and unslop. Do not use it for code-only passes such as `/deslop`.
+Use this gate for authored prose under docs-mode, technical-writing, and unslop. Skip it for code cleanup passes such as `/deslop`, which change source rather than house prose.
