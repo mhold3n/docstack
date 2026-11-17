@@ -30,6 +30,18 @@ To get the book on `/`, import this repo as a team marketplace (or install after
 
 Detects available Task models, picks a reasoning budget, and writes `~/.cursor/rules/docstack-models.mdc`. Every docs role (chapter, fact-fix, edit, arena panel) then has an explicit model.
 
+
+## Voice MCP
+
+Dynamic voice review ships in this plugin (`voice/` + root `mcp.json`).
+
+| Piece | Location |
+|-------|----------|
+| Runtime (MCP, `voicectl`, lib) | plugin `voice/` |
+| Corpus / cache / config | `~/.cursor/voice` (`CURSOR_VOICE_ROOT`) |
+
+After install, run `/setup-voice` (or `scripts/run-voice-mcp.sh` once) so the plugin venv exists. Remove any user-level `voice` entry from `~/.cursor/mcp.json` to avoid a duplicate `user-voice` server. Marker convert stays on the user `marker` MCP for now.
+
 ## Help
 
 ```

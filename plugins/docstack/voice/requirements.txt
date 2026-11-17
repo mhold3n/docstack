@@ -1,0 +1,3 @@
+# The voice project pins the Langfuse Python SDK so tracing code keeps the same release that the virtual environment already installed and verified.
+# Recreate the environment from the project root when this pin changes so local tracing matches the SDK the application imports.
+langfuse==5.2.0

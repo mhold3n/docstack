@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "voice-bank-entry",
+  "title": "Voice bank archetype entry",
+  "description": "Frontmatter and entry shape for banks/archetypes/*.md",
+  "type": "object",
+  "required": ["bank_id", "corpus_version_at_last_harvest", "entry_count"],
+  "properties": {
+    "bank_id": {
+      "type": "string",
+      "enum": [
+        "grammar",
+        "word",
+        "word_combo",
+        "phrase",
+        "punctuation",
+        "phrasing",
+        "paragraph",
+        "technical_writing"
+      ]
+    },
+    "corpus_version_at_last_harvest": { "type": "string" },
+    "entry_count": { "type": "integer", "minimum": 0 },
+    "entry": {
+      "type": "object",
+      "required": ["source_path", "text"],
+      "properties": {
+        "source_path": {
+          "type": "string",
+          "description": "Basename or path under references/active/"
+        },
+        "span": {
+          "type": "string",
+          "description": "Optional line range, e.g. 12-18"
+        },
+        "text": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

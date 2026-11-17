@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "voice": {
+      "command": "bash",
+      "args": ["${CURSOR_PLUGIN_ROOT}/scripts/run-voice-mcp.sh"],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

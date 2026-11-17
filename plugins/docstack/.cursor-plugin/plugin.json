@@ -1,7 +1,7 @@
 {
 	"name": "docstack",
 	"displayName": "docstack",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "if you want to go fast, go deep first. docstack helps you write less, but higher quality docs and PDFs. rigorous agent workflows you can parallelize with confidence.",
 	"author": {
 		"name": "Max Holden"
@@ -30,5 +30,6 @@
 	"skills": "./skills/",
 	"agents": "./agents/",
 	"homepage": "https://github.com/mhold3n/docstack",
-	"repository": "https://github.com/mhold3n/docstack"
+	"repository": "https://github.com/mhold3n/docstack",
+	"mcpServers": "./mcp.json"
 }

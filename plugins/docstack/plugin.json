@@ -1,23 +1,23 @@
 {
-	"$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-	"name": "docstack",
-	"version": "0.1.6",
-	"description": "if you want to go fast, go deep first. docstack helps you write less, but higher quality docs and PDFs. rigorous agent workflows you can parallelize with confidence.",
-	"author": {
-		"name": "Max Holden"
-	},
-	"homepage": "https://github.com/mhold3n/docstack",
-	"repository": "https://github.com/mhold3n/docstack",
-	"license": "MIT",
-	"keywords": [
-		"docstack",
-		"docs-mode",
-		"documentation",
-		"markdown",
-		"pdf",
-		"workflow",
-		"principles",
-		"unslop",
-		"technical-writing"
-	]
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "docstack",
+  "version": "0.1.7",
+  "description": "if you want to go fast, go deep first. docstack helps you write less, but higher quality docs and PDFs. rigorous agent workflows you can parallelize with confidence.",
+  "author": {
+    "name": "Max Holden"
+  },
+  "homepage": "https://github.com/mhold3n/docstack",
+  "repository": "https://github.com/mhold3n/docstack",
+  "license": "MIT",
+  "keywords": [
+    "docstack",
+    "docs-mode",
+    "documentation",
+    "markdown",
+    "pdf",
+    "workflow",
+    "principles",
+    "unslop",
+    "technical-writing"
+  ]
 }

@@ -1,0 +1,7 @@
+# Heat Pump Trial
+1. Scope
+This note records three steady-state trials.
+2. Method
+We held each set point for 5 min. Temperatures and pressures were logged at four ports.
+3. Results
+Condenser heat rates were 781 W, 769 W, and 816 W. COP values were 1.651, 1.643, and 1.821.

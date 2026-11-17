@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Agent note: entrypoint for dynamic voice corpus (ensure/review/condition).
+# Runtime code lives beside this script (plugin voice/). Corpus defaults to
+# ~/.cursor/voice via CURSOR_VOICE_ROOT — never assume VoiceRoot == VoiceRuntime.
+set -euo pipefail
+VOICE_RUNTIME="$(cd "$(dirname "$0")/.." && pwd)"
+export CURSOR_VOICE_ROOT="${CURSOR_VOICE_ROOT:-$HOME/.cursor/voice}"
+export PATH="/opt/homebrew/bin:${PATH:-}"
+# Agent note: the venv holds langfuse==5.2.0. System Python is PEP 668 managed.
+PY="$VOICE_RUNTIME/.venv/bin/python"
+if [[ ! -x "$PY" ]]; then
+  echo "voicectl: missing $PY. From $VOICE_RUNTIME run: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt" >&2
+  exit 1
+fi
+exec "$PY" "$VOICE_RUNTIME/lib/voice_core.py" "$@"
