@@ -1,7 +1,7 @@
 {
 	"name": "docstack",
 	"displayName": "docstack",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"description": "if you want to go fast, go deep first. docstack helps you write less, but higher quality docs and PDFs. rigorous agent workflows you can parallelize with confidence.",
 	"author": {
 		"name": "Max Holden"
@@ -10,14 +10,14 @@
 	"logo": "assets/logo.png",
 	"keywords": [
 		"docstack",
-		"docs-mode",
+		"document-mode",
 		"documentation",
 		"markdown",
 		"pdf",
 		"workflow",
 		"principles",
-		"unslop",
-		"technical-writing"
+		"document-unslop",
+		"document-technical-writing"
 	],
 	"category": "developer-tools",
 	"tags": [

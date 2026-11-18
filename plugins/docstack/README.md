@@ -10,22 +10,22 @@ docstack is a docs/PDF twin of [pstack](https://github.com/cursor/plugins/tree/m
 
 - **Customize card** — works for local installs (`~/.cursor/plugins/local/docstack`).
 - **`/` slash skill rows** — Cursor resolves relative logos to `raw.githubusercontent.com` (repo + commit). That needs a GitHub / marketplace install, not a local folder. Local installs keep the generic cube.
-- **Custom Mode badge** — skill `icon` / `color` (`book-open` / `blue` on docs-mode, setup, help).
+- **Custom Mode badge** — skill `icon` / `color` (`book-open` / `blue` on document-mode, document-setup, document-help).
 
 To get the book on `/`, import this repo as a team marketplace (or install after marketplace listing), then prefer that install over the local copy (same name: marketplace wins).
 
 ## Front door
 
 ```
-/docs-mode <goal> — done when <checkable predicate>
+/document-mode <goal> — done when <checkable predicate>
 ```
 
-`/docs-mode` matches a playbook and copies its steps into todos. It routes skills as steps need them. Core routes include `architect`, `arena`, `swarm`, and `interrogate`. Prose and PDF routes include `voice-write`, `unslop`, `technical-writing`, and `pdf`. Large or unattended work with no fit falls through to `/figure-it-out`.
+`/document-mode` matches a playbook and copies its steps into todos. It routes skills as steps need them. Core routes include `document-architect`, `document-arena`, `document-swarm`, and `document-interrogate`. Prose and PDF routes include `document-voice-write`, `document-unslop`, `document-technical-writing`, and `document-pdf`. Large or unattended work with no fit falls through to `/document-figure-it-out`.
 
 ## Setup
 
 ```
-/setup-docstack
+/document-setup
 ```
 
 Detects available Task models, picks a reasoning budget, and writes `~/.cursor/rules/docstack-models.mdc`. Every docs role (chapter, fact-fix, edit, arena panel) then has an explicit model.
@@ -40,14 +40,14 @@ Dynamic voice review ships in this plugin (`voice/` + root `mcp.json`).
 | Runtime (MCP, `voicectl`, lib) | plugin `voice/` |
 | Corpus / cache / config | `~/.cursor/voice` (`CURSOR_VOICE_ROOT`) |
 
-After install, run `/setup-voice` (or `scripts/run-voice-mcp.sh` once) so the plugin venv exists. Remove any user-level `voice` entry from `~/.cursor/mcp.json` to avoid a duplicate `user-voice` server. Marker convert stays on the user `marker` MCP for now.
+After install, run `/document-setup-voice` (or `scripts/run-voice-mcp.sh` once) so the plugin venv exists. Remove any user-level `voice` entry from `~/.cursor/mcp.json` to avoid a duplicate `user-voice` server. Marker convert stays on the user `marker` MCP for now.
 
-Authored prose under docs-mode, technical-writing, and unslop must call `/voice-write`, which gates on `plugin-docstack-voice` (`get_voice_profile` before draft, `review_file` / `review_text` before done). Fail closed if that namespace is missing.
+Authored prose under document-mode, document-technical-writing, and document-unslop must call `/document-voice-write`, which gates on `plugin-docstack-voice` (`get_voice_profile` before draft, `review_file` / `review_text` before done). Fail closed if that namespace is missing.
 
 ## Help
 
 ```
-/docstack-help
+/document-help
 ```
 
 Routing map for humans. Does not start expensive work.
@@ -61,7 +61,7 @@ Prove it on the real artifact:
 
 ## Make it yours
 
-`/automate-me` drafts a personal `-mode` skill from how you actually work. `/reflect` proposes skill edits from this transcript. `/correct` encodes repeated mistakes so they cannot recur.
+`/document-automate-me` drafts a personal `-mode` skill from how you actually work. `/document-reflect` proposes skill edits from this transcript. `/document-correct` encodes repeated mistakes so they cannot recur.
 
 ## License
 
